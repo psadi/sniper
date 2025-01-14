@@ -1,0 +1,2 @@
+# sniper
+sniper file patterns
