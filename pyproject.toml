@@ -3,14 +3,24 @@ name = "sniper"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
+authors = [
+    { name = "psadi", email = "ps.adithya@icloud.com" }
+]
 requires-python = ">=3.13"
 dependencies = [
     "httpx>=0.28.1",
     "pyopenssl>=25.0.0",
 ]
 
+[project.scripts]
+sniper = "sniper:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [dependency-groups]
 dev = [
     "mypy>=1.14.1",
-    "ruff>=0.9.1",
+    "ruff>=0.9.3",
 ]
